@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="brand">
+    <div class="logo">E</div>
+    <div class="name">ExamParser</div>
+  </div>
+
+  <p class="desc">Turn any document into a quiz or form.</p>
+
+  <label class="upload" id="upload">
+    <input type="file" id="file" hidden accept=".txt,.csv,.xlsx,.xls,.docx">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v10M8 9l4-4 4 4"/><path d="M5 19h14"/></svg>
+    <span id="fileName">Click to upload a file (txt, csv, xlsx, docx · ≤ 500KB)</span>
+  </label>
+  <p class="hint" id="msg"></p>
+
+  <label class="field-label">Export to</label>
+  <div class="select" id="select">
+    <div class="select-trigger" id="trigger">
+      <span id="current">Excel</span>
+      <svg class="chev" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+    </div>
+    <div class="options" id="options"></div>
+  </div>
+
+  <button class="convert" id="convert">Convert</button>
+
+  <p class="note" id="note">Keep this popup open during conversion. For large files, use the <a class="lnk" href="https://examparser.com" target="_blank" rel="noopener">web version</a>.</p>
+
+  <script src="../vendor/xlsx.full.min.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>
