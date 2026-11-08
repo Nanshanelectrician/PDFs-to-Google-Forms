@@ -20,6 +20,7 @@
 - [Supported export platforms](#supported-export-platforms)
 - [Try the Google Form converter in your browser](#try-the-google-form-converter-in-your-browser)
 - [How it works](#how-it-works)
+- [Privacy & data safety](#privacy--data-safety)
 - [FAQ](#faq)
 - [Contributing](#contributing)
 - [License](#license)
@@ -43,7 +44,7 @@ Core keyword, one sentence: **PDF to Google Form, Canvas, Moodle & Excel, conver
 - Scanned paper exams and locked PDFs make it even worse.
 - Existing SaaS tools are expensive and lock your data in.
 
-ExamParser is **open source**, runs locally after you install it, and puts you in control of your files.
+ExamParser is **open source** and **privacy-first**: your files are automatically deleted the moment conversion finishes — nothing is kept.
 
 ---
 
@@ -53,7 +54,7 @@ ExamParser is **open source**, runs locally after you install it, and puts you i
 - 📄 **PDF first** — handles digital PDFs, scanned PDFs (OCR), and fillable forms.
 - 🧠 **Smart question detection** — multiple choice, checkboxes, short answer, true/false, grids.
 - ✅ **Answer-key preservation** — quizzes keep correct answers and points for auto-grading.
-- 🔒 **Data stays yours** — open-source, no forced account, files processed locally.
+- 🔒 **Privacy by design** — files are **deleted immediately after use** (用完立删); your data is never stored or reused.
 - 💸 **Free** — no subscription, no paywall on core conversion.
 - 🌐 **Multi-platform export** — Google Form, Excel, Canvas, Moodle, and any format you need.
 
@@ -61,7 +62,7 @@ ExamParser is **open source**, runs locally after you install it, and puts you i
 
 ## Install the open-source extension locally
 
-Because this is an open-source project, you can pull the code and load it into Chrome yourself — no Chrome Web Store required.
+This is an open-source project, so you can pull the code and load it into Chrome yourself — no Chrome Web Store required.
 
 ### Prerequisites
 
@@ -72,10 +73,10 @@ Because this is an open-source project, you can pull the code and load it into C
 
 ```bash
 # 1. Clone the repository to your local machine
-git clone https://github.com/examparser/examparser-extension.git
+git clone https://github.com/Nanshanelectrician/PDFs-to-Google-Forms.git
 
 # 2. Enter the project directory
-cd examparser-extension
+cd PDFs-to-Google-Forms
 ```
 
 ```text
@@ -86,14 +87,16 @@ chrome://extensions
 
 # 5. Click "Load unpacked"
 
-# 6. Select the cloned folder (examparser-extension/)
+# 6. Select the cloned folder (PDFs-to-Google-Forms/)
 
 # 7. The ExamParser icon now appears in your toolbar — pin it for easy access
 ```
 
-That's it. The extension is installed and ready to use locally. No build step, no API key, no account needed for basic conversion.
+That's it. The extension is installed and ready to use. No build step required.
 
 > 💡 **Tip:** After pulling updates with `git pull`, return to `chrome://extensions` and click the **reload** icon on the ExamParser card.
+
+Source repository: <https://github.com/Nanshanelectrician/PDFs-to-Google-Forms/tree/main>
 
 ---
 
@@ -103,7 +106,7 @@ That's it. The extension is installed and ready to use locally. No build step, n
 2. Click the **ExamParser** toolbar icon.
 3. Choose your target format — **Google Form, Excel, Canvas, Moodle, or any other platform you need**.
 4. Review the detected questions (edit if needed).
-5. Export. Your Google Form, Excel sheet, or LMS quiz is ready.
+5. Export. Your Google Form, Excel sheet, or LMS quiz is ready — and your source file is deleted right after.
 
 ---
 
@@ -150,12 +153,22 @@ For every other export format (Excel, Canvas, Moodle, and more), visit the main 
 
 ## How it works
 
-1. **Parse** — the extension reads the file locally and extracts question structure (stem, options, answer key).
-2. **Detect** — AI/OCR classifies each item into the right question type.
-3. **Map** — questions are mapped to the target platform's schema (Google Forms fields, Canvas quiz objects, Moodle QTI, Excel rows).
-4. **Export** — you download or push the result directly to the chosen platform.
+1. **Upload** — you send the file through the extension or the web converter.
+2. **Parse** — the server reads the file and extracts question structure (stem, options, answer key).
+3. **Detect** — AI/OCR classifies each item into the right question type.
+4. **Map** — questions are mapped to the target platform's schema (Google Forms fields, Canvas quiz objects, Moodle QTI, Excel rows).
+5. **Export** — you download or push the result to the chosen platform.
+6. **Delete** — the source file is **automatically deleted immediately after conversion** (用完立删).
 
-Your files are processed on your machine; you stay in control of your data.
+---
+
+## Privacy & data safety
+
+Your privacy is the default, not an upsell:
+
+- **用完立删** — files are erased the moment conversion completes; we never store or reuse your documents.
+- **No training on your data** — your exam papers and questionnaires are not used to train any model.
+- **Minimal footprint** — conversion is stateless; nothing persists after the job ends.
 
 ---
 
@@ -174,10 +187,10 @@ Yes. Built-in OCR reads scanned and photographed paper exams, then rebuilds them
 Yes. Beyond Google Form and Excel, ExamParser exports to Canvas, Moodle, and any other format you need. See <https://examparser.com>
 
 **Is my data safe?**  
-The extension is open source and processes files locally. You are not forced into an account, and your files stay under your control.
+Yes. Your files are **deleted immediately after use** (用完立删). We do not store, reuse, or train on your documents.
 
 **How do I install the open-source version?**  
-Clone the repo and load it as an unpacked extension in `chrome://extensions` (Developer mode). Full steps above.
+Clone the repo at <https://github.com/Nanshanelectrician/PDFs-to-Google-Forms.git> and load it as an unpacked extension in `chrome://extensions` (Developer mode). Full steps above.
 
 ---
 
