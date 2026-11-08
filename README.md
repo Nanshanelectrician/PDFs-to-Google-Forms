@@ -14,7 +14,7 @@
 - [What it does](#what-it-does)
 - [Why this exists](#why-this-exists)
 - [Key features](#key-features)
-- [Install the open-source extension locally](#install-the-open-source-extension-locally)
+- [Install the extension](#install-the-extension)
 - [How to use](#how-to-use)
 - [Supported input files](#supported-input-files)
 - [Supported export platforms](#supported-export-platforms)
@@ -60,16 +60,24 @@ ExamParser is **open source** and **privacy-first**: your files are automaticall
 
 ---
 
-## Install the open-source extension locally
+## Install the extension
 
-This is an open-source project, so you can pull the code and load it into Chrome yourself — no Chrome Web Store required.
+### Option A — One-click from the Chrome Web Store (recommended)
 
-### Prerequisites
+👉 **<https://chromewebstore.google.com/detail/examparser-document-to-qu/dclokolbphchjknanggfaljfjmbknbgn?hl=en-US\&utm_source=ext_sidebar>**
+
+Click **Add to Chrome** and the extension is installed instantly — no code, no setup.
+
+### Option B — Build from source (open-source)
+
+This is an open-source project, so you can also pull the code and load it into Chrome yourself.
+
+#### Prerequisites
 
 - Google Chrome (or any Chromium-based browser: Edge, Brave, Arc)
 - Git
 
-### Steps
+#### Steps
 
 ```bash
 # 1. Clone the repository to your local machine
@@ -178,7 +186,7 @@ Your privacy is the default, not an upsell:
 No. Google Forms has no native PDF import. ExamParser bridges that gap — convert PDF to Google Form in one click: <https://examparser.com/en/googleform_pdf/>
 
 **Is there a free way to convert PDF to Google Form?**  
-Yes. ExamParser is free and open source. You can install the extension locally or use the web converter at <https://examparser.com/en/googleform_pdf/>
+Yes. ExamParser is free and open source. Install it from the Chrome Web Store or use the web converter at <https://examparser.com/en/googleform_pdf/>
 
 **Can it convert a scanned PDF to Google Form?**  
 Yes. Built-in OCR reads scanned and photographed paper exams, then rebuilds them as a Google Form.
@@ -189,8 +197,8 @@ Yes. Beyond Google Form and Excel, ExamParser exports to Canvas, Moodle, and any
 **Is my data safe?**  
 Yes. Your files are **deleted immediately after use** (用完立删). We do not store, reuse, or train on your documents.
 
-**How do I install the open-source version?**  
-Clone the repo at <https://github.com/Nanshanelectrician/PDFs-to-Google-Forms.git> and load it as an unpacked extension in `chrome://extensions` (Developer mode). Full steps above.
+**How do I install the extension?**  
+One click from the Chrome Web Store: <https://chromewebstore.google.com/detail/examparser-document-to-qu/dclokolbphchjknanggfaljfjmbknbgn?hl=en-US\&utm_source=ext_sidebar> — or clone the source at <https://github.com/Nanshanelectrician/PDFs-to-Google-Forms.git> and load it as an unpacked extension in `chrome://extensions` (Developer mode).
 
 ---
 
